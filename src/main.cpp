@@ -49,6 +49,12 @@ public:
     }
 };
 
+class monteCarloSimulation{
+    private:
+    public:
+    monteCarloSimulation(class CallOptionPricingCalculator);
+};
+
 int main() {
     CallOptionPricingCalculator optionPricer(100, 100.3, 30, 0.05, 0.2);
     double Price = optionPricer.OptionPrice();
